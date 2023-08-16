@@ -656,10 +656,10 @@ label {
   flex-direction: column;
   justify-content: space-between;
   background-color: #4f46e5;
-  height: 23rem;
+  height: 20rem;
   border-radius: 1rem;
-  padding: 1.5rem;
-  padding-bottom: 1rem;
+  padding: 2rem;
+  padding-bottom: 0.5rem;
   align-items: center;
   color: #f7f7f7;
   /* display: -webkit-box;
@@ -675,6 +675,9 @@ label {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center; */
+}
+.team-img {
+  width: 10rem;
 }
 
 .team-member-info {
@@ -2156,15 +2159,6 @@ iframe {
   min-height: 85px;
   /* width: 85px; */
   display: inline-block;
-}
-
-.img-wrapper-circle {
-  width: 11rem;
-  /* height: 12rem; */
-  /* margin: 2rem;
-  margin-bottom: 1rem; */
-  border-radius: 100%;
-  overflow: hidden;
 }
 
 /* #img-cloud {
