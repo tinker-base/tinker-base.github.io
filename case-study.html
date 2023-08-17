@@ -115,6 +115,14 @@
             Additionally, it offers a dashboard UI which simplifies working with
             a backend’s database.
           </p>
+          <figure>
+            <img
+              src="assets/images/architecture/dashboard_static.png"
+              class="case-study-image"
+              alt=""
+            />
+            <figcaption>Dashboard UI</figcaption>
+          </figure>
           <br />
           <p>
             This case study will first examine the deployment and configuration
@@ -581,7 +589,7 @@
           <br />
           <figure>
             <img
-              src="assets/images/architecture/dashboard_static.png"
+              src="assets/images/dashboard.gif"
               class="case-study-image"
               alt=""
             />
@@ -654,20 +662,20 @@
           <p>
             For example, in the case of the admin database, it manages a table
             of user backends. The dashboard UI needs to query an endpoint like
-            admin.yourDomain.com/projects to display the list of backends.
+            <span class="endpoint">admin.yourDomain.com/projects</span> to display the list of backends.
             Similarly, if a user was creating the frontend of a movie
             application, the frontend might need to query an endpoint like
-            cinemaCurate.yourDomain.com/movies to obtain a list of movies. These
+            <span class="endpoint">cinemaCurate.yourDomain.com/movies</span> to obtain a list of movies. These
             endpoints needed to be generated at the API layer.
           </p>
           <br />
           <p>
             For example, in the case of the admin database, it manages a table
             of user backends. The dashboard UI needs to query an endpoint like
-            admin.yourDomain.com/projects to display the list of backends.
+            <span class="endpoint">admin.yourDomain.com/projects</span> to display the list of backends.
             Similarly, if a user was creating the frontend of a movie
             application, the frontend might need to query an endpoint like
-            cinemaCurate.yourDomain.com/movies to obtain a list of movies. These
+            <span class="endpoint">cinemaCurate.yourDomain.com/movies</span> to obtain a list of movies. These
             endpoints needed to be generated at the API layer.
           </p>
           <br />
@@ -794,10 +802,10 @@
           <br />
           <figure>
             <img
-              src="assets/images/challenges/rpc.png"
+              src="assets/images/challenges/init_deploy_CLI.png"
               class="case-study-image"
             />
-            <figcaption>Create table RPC</figcaption>
+            <figcaption>Initial CLI Deployment</figcaption>
           </figure>
           <br />
           <p>
@@ -807,6 +815,13 @@
             user backend management on top of the initial deployment and
             teardown of the admin infrastructure.
           </p>
+          <figure>
+            <img
+              src="assets/images/challenges/expanded_CLI.svg"
+              class="case-study-image-small"
+            />
+            <figcaption>Expanded CLI</figcaption>
+          </figure>
           <br />
           <p>
             The benefits of this strategy were two-fold. First, we create a
@@ -840,6 +855,13 @@
             intuitive as users would now be required to create and delete
             backends through their terminal.
           </p>
+          <figure>
+            <img
+              src="assets/images/challenges/less_intuitive_dashboard.svg"
+              class="case-study-image"
+            />
+            <figcaption>Dashboard less intuitive</figcaption>
+          </figure>
           <br />
           <h4>Possible Solutions</h4>
           <br />
@@ -953,7 +975,7 @@
           <br />
           <figure>
             <img
-              src="assets/images/challenges/stored_procedure.png"
+              src="assets/images/challenges/authentication.png"
               class="case-study-image"
             />
             <figcaption>PostgREST authentication</figcaption>
@@ -1088,9 +1110,9 @@
           <p>
             To achieve this, DNS records are created for the admin server and
             user backend servers. For example, record names like
-            admin.yourdomain.com and todos.yourdomain.com are set to point to
+            <span class="endpoint">admin.yourdomain.com</span> and <span class="endpoint"></span>todos.yourdomain.com</span> are set to point to
             the ALB's address. A single certificate with a wildcard is created
-            to cover all subdomains, *.yourdomain.com.
+            to cover all subdomains, <span class="endpoint">*.yourdomain.com</span>.
           </p>
           <br />
           <p>
@@ -1101,19 +1123,17 @@
           </p>
           <br />
 
-          <figure>
+          <figure style="display: inline-block; width: 45%; margin: 3rem 0;">
             <img
               src="assets/images/challenges/decentralize.png"
               class="case-study-image"
             />
             <figcaption>
-              Decentralizing the TLS certificate was an explored, but discared
-              approach
+              Decentralizing the TLS certificate was explored, but discarded
             </figcaption>
           </figure>
-          <br />
 
-          <figure>
+          <figure style="display: inline-block; width: 45%; margin: 3rem 0;">
             <img
               src="assets/images/challenges/centralize.png"
               class="case-study-image"
@@ -1245,7 +1265,7 @@
           <br />
           <figure>
             <img
-              src="assets/images/challenges/docker.png"
+              src="assets/images/challenges/docker.drawio.png"
               class="case-study-image"
             />
             <figcaption>

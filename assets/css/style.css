@@ -2208,3 +2208,8 @@ iframe {
 .tab-image-wrap > img {
   width: 100%;
 }
+
+.endpoint {
+  color: rgb(69, 127, 11) !important;
+  font-weight: 600;
+}
