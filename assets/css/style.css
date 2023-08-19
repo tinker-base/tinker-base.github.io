@@ -2007,6 +2007,17 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 435px) {
+  h1.h2.centered {
+    font-size: 30px;
+  }
+  #mobile-line-height {
+    line-height: 30px;
+    margin-top: 5px;
+    text-align: center;
+  }
+}
+
 /* ADDITIONS */
 .bold {
   font-weight: bold;
