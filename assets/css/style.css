@@ -2241,3 +2241,9 @@ iframe {
   color: rgb(69, 127, 11) !important;
   font-weight: 600;
 }
+
+iframe {
+  width: 80%;
+  height: 300px;
+  margin: 2rem;
+}
